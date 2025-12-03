@@ -1,0 +1,169 @@
+/* Genel Ayarlar ve Sıfırlama */
+body {
+    margin: 0;
+    padding: 0;
+    /* Erişilebilir bir koyu arka plan */
+    background-color: #121212; 
+    color: #f0f0f0; /* Yüksek kontrastlı açık yazı rengi */
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    text-align: center;
+}
+
+.container {
+    padding: 40px;
+    max-width: 800px;
+    width: 100%;
+}
+
+/* Ana Başlık Stili */
+.main-text {
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 30px;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+}
+
+/* Kalp İkonu Stili */
+.heart-icon {
+    font-size: 6rem; 
+    animation: pulse 1.5s infinite;
+    display: block; 
+    margin: 30px auto;
+}
+
+/* Kalp Animasyonu (Büyüyüp Küçülme) */
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    50% {
+        transform: scale(1.1);
+        opacity: 0.8;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* Erişilebilirlik Notu Stili */
+.accessibility-note {
+    margin-top: 50px;
+    font-size: 0.9rem;
+    color: #aaa;
+}
+
+/* Erişilebilirlik Bildirgesi Bölümü Stilleri */
+.accessibility-statement {
+    margin-top: 80px;
+    padding: 30px;
+    background-color: #1e1e1e; 
+    border-radius: 10px;
+    border-left: 5px solid #00aaff; 
+    text-align: left;
+}
+
+.accessibility-statement h2 {
+    color: #00aaff; 
+    font-size: 1.8rem;
+    margin-top: 0;
+    border-bottom: 2px solid #00aaff40;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.accessibility-statement ul {
+    list-style: none;
+    padding: 0;
+}
+
+.accessibility-statement ul li {
+    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="%2300aaff" class="bi bi-check-circle-fill" viewBox="0 0 16 16"><path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.471 5.354 7.348a.75.75 0 0 0-1.06 1.06l2.5 2.5a.75.75 0 0 0 1.08-.022l4.25-5.5a.75.75 0 0 0-.02-1.08z"/></svg>') no-repeat left center;
+    background-size: 16px;
+    padding-left: 25px;
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+
+/* Destek ve İletişim Bölümü Stilleri */
+.contact-support {
+    margin-top: 60px;
+    padding: 30px;
+    background-color: #282828; 
+    border-radius: 10px;
+    text-align: center;
+}
+
+.contact-support h2 {
+    color: #f0f0f0;
+    font-size: 2rem;
+    margin-bottom: 25px;
+}
+
+.support-links {
+    margin-top: 30px;
+    display: flex; 
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.button {
+    text-decoration: none;
+    padding: 15px 30px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.3s;
+    font-size: 1.1rem;
+    display: inline-block;
+}
+
+.button i {
+    margin-left: 8px;
+}
+
+/* Birincil Buton (Bağış) */
+.primary {
+    background-color: #e30b5c; 
+    color: #fff;
+    border: 2px solid #e30b5c;
+}
+
+.primary:hover {
+    background-color: #c0094c;
+    transform: translateY(-2px);
+}
+
+/* İkincil Buton (Geri Bildirim) */
+.secondary {
+    background-color: transparent;
+    color: #00aaff;
+    border: 2px solid #00aaff;
+}
+
+.secondary:hover {
+    background-color: #00aaff;
+    color: #121212;
+    transform: translateY(-2px);
+}
+
+.note {
+    margin-top: 30px;
+    font-size: 0.85rem;
+    color: #999;
+}
+
+/* Küçük ekranlar için düzenleme */
+@media (max-width: 600px) {
+    .main-text {
+        font-size: 2.5rem;
+    }
+    .heart-icon {
+        font-size: 4rem;
+    }
+}
